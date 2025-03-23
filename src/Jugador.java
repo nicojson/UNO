@@ -26,7 +26,6 @@ public class Jugador {
 
     public int elegirCarta(Scanner scanner, String cartaActual, Mazo mazo) {
         while (true) {
-            System.out.println("");
             System.out.print("Elige una carta para jugar o ingresa 0 para robar: ");
             int eleccion = scanner.nextInt();
 
