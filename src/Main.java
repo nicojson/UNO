@@ -1,6 +1,15 @@
+// src/Main.java
+import controller.GameController;
+import view.MainFrame;
+
+import javax.swing.SwingUtilities;
+
 public class Main {
     public static void main(String[] args) {
-        Juego juego = new Juego();
-        juego.iniciar();
+        SwingUtilities.invokeLater(() -> {
+            GameController gameController = new GameController();
+            MainFrame frame = new MainFrame(gameController);
+            frame.setVisible(true);
+        });
     }
 }
